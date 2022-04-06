@@ -4,7 +4,7 @@
 
 Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.
 
-Today, we are going to create a WordPress instance using docker.
+Today, we are going to create a WordPress website using docker.
 
 ## Prerequisite.
 
