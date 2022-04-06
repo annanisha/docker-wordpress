@@ -12,7 +12,7 @@ Create an ec2 instance and install docker on it.
 
 This is not mandatory, you can also install docker on your local machine.
 
-### Steps to install WordPress using docker.
+## Steps to install WordPress using docker.
 
 ### Step 1: Install docker on your machine.
 
