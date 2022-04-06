@@ -26,7 +26,7 @@ $ sudo systemctl enable docker.service
 Add ec2-user to docker group
 
 $ sudo usermod -a -G docker ec2-user
-rep "docker" /etc/group
+grep "docker" /etc/group
 docker:x:992:ec2-user
 
 ### Step 2: Create MySQL container.
