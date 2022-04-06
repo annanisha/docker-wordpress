@@ -26,10 +26,21 @@ $ sudo systemctl enable docker.service
 Add ec2-user to docker group
 
 $ sudo usermod -a -G docker ec2-user
-grep "docker" /etc/group
-docker:x:992:ec2-user
 
-### Step 2: Create MySQL container.
+### Step 2: Create a network for the WordPress website.
+
+$ docker network create wpnetwork
+
+```
+$ docker network ls
+NETWORK ID     NAME        DRIVER    SCOPE
+16c2657f831e   bridge      bridge    local
+bc14caaf77d5   host        host      local
+1e94fdcd42c7   none        null      local
+9ce3e0c467cd   wpnetwork   bridge    local
+```
+
+### Step 3: Create MySQL container.
 
 docker container run \
 -d \
@@ -43,7 +54,7 @@ mysql:5.6
 
 ![mysql](https://user-images.githubusercontent.com/100779249/162000293-448dfc06-0c15-4052-a813-19a34a0d034f.png)
 
-### Step 3: Create WordPress container.
+### Step 4: Create WordPress container.
 
  docker container run \
  -d \
