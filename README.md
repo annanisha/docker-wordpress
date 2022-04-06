@@ -1,20 +1,20 @@
-# Docker-WordPress
+# How to install WordPress using docker?.
 
-## Description.
+## Description
 
 Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.
 
 Today, we are going to create a WordPress website using docker.
 
-## Prerequisite.
+## Prerequisite
 
 Create an ec2 instance and install docker on it. 
 
 This is not mandatory, you can also install docker on your local machine.
 
-## Steps to install WordPress using docker.
+## Steps to install WordPress using docker
 
-### Step 1: Install docker on your machine.
+### Step 1: Install docker on your machine
 
 $ sudo yum install docker -y
 
@@ -27,7 +27,7 @@ Add ec2-user to docker group
 
 $ sudo usermod -a -G docker ec2-user
 
-### Step 2: Create a network for the WordPress website.
+### Step 2: Create a network for the WordPress website
 
 $ docker network create wpnetwork
 
@@ -40,7 +40,7 @@ bc14caaf77d5   host        host      local
 9ce3e0c467cd   wpnetwork   bridge    local
 ```
 
-### Step 3: Create MySQL container.
+### Step 3: Create MySQL container
 
 docker container run \
 -d \
@@ -54,7 +54,7 @@ mysql:5.6
 
 ![mysql](https://user-images.githubusercontent.com/100779249/162000293-448dfc06-0c15-4052-a813-19a34a0d034f.png)
 
-### Step 4: Create WordPress container.
+### Step 4: Create WordPress container
 
  docker container run \
  -d \
@@ -82,6 +82,6 @@ Now, call your website using ec2 public IP address and configure your WordPress 
 
 Wow!!! your WordPress website is live now!!
 
-## Conclusion.
+## Conclusion
 
 This article explains how to install WordPress using docker. Thank you!!
