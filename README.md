@@ -1,20 +1,20 @@
 # Docker-WordPress
 
-# Description.
+## Description.
 
 Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.
 
 Today, we are going to create a WordPress instance using docker.
 
-# Prerequisite.
+## Prerequisite.
 
 1. Create an ec2 instance and install docker on it. 
 
 This is not mandatory, you can also install docker on your local machine.
 
-# Steps to install WordPress using docker.
+### Steps to install WordPress using docker.
 
-## Step 1: Install docker on your machine.
+### Step 1: Install docker on your machine.
 
 $ sudo yum install docker -y
 
@@ -29,7 +29,7 @@ $ sudo usermod -a -G docker ec2-user
 rep "docker" /etc/group
 docker:x:992:ec2-user
 
-## Step 2: Create MySQL container.
+### Step 2: Create MySQL container.
 
 docker container run \
 -d \
@@ -43,7 +43,7 @@ mysql:5.6
 
 ![mysql](https://user-images.githubusercontent.com/100779249/162000293-448dfc06-0c15-4052-a813-19a34a0d034f.png)
 
-## Step 3: Create WordPress container.
+### Step 3: Create WordPress container.
 
  docker container run \
  -d \
