@@ -6,7 +6,7 @@ Docker is a set of platform as a service products that use OS-level virtualizati
 
 Today, we are going to create a WordPress instance using docker.
 
-# Prerequisite
+# Prerequisite.
 
 1. Create an ec2 instance and install docker on it. 
 
@@ -71,6 +71,6 @@ Now, call your website using ec2 public IP address and configure your WordPress 
 
 Wow!!! your WordPress website is live now!!
 
-## Conclusion
+## Conclusion.
 
 This article explains how to install WordPress using docker. Thank you!!
