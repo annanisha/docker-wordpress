@@ -10,7 +10,7 @@ Today, we are going to create a WordPress website using docker.
 
 Create an ec2 instance and install docker on it. 
 
-This is not mandatory, you can also install docker on your local machine also.
+This is not mandatory, you can also install docker on your local machine.
 
 ## Steps to install WordPress using docker
 
